@@ -1,95 +1,143 @@
 <!DOCTYPE html>
-
- 
-
-<html>
-
- 
-
+<html lang="en">
 <head>
-
-	<link rel="stylesheet" href="styles.css">
-
-	<style>
-
-		.container{
-
-			width: 300px; 
-
-  padding: 20px;
-
-  margin: 0 auto; 
-
-  border: 2px solid #000; 
-
-  border-radius: 10px;
-
-  text-align: center;
-
-			background-color:gray;
-
-		}
-
-		.container div{
-
-			margin:10px;
-
-			border-radius:50%;
-
-			width:50px;
-
-			height:50px;
-
-			display:inline-block
-
-		}
-
-		.green{
-
-			background-color:green;
-
-		}
-
-		.yellow{
-
-			background-color:yellow;
-
-		}
-
-		.red{
-
-			background-color:red
-
-		}
-
-	</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        table.middle {
+            border-collapse: collapse;
+            margin: 20px auto;
+            border: 1px solid black;
+            spacing: 1px;
+            padding: 1px;
+        }
+        
+        table.middle th, table.middle td {
+            border: 1px solid black;
+            padding: 1px;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        .right {
+            text-align: right;
+        }
+        
+        .green {
+            background-color: green;
+            color: white;
+        }
+        
+        .blue {
+            background-color: blue;
+            color: white;
+        }
+    </style>
 </head>
-
- 
-
 <body>
-
-	<!-- the entire body must be written by student -->
-
-    <script type="text/javascript" src="./script.js">
-
-</script>
-
-	<div class="container">
-
-		<div class="green"></div>
-
-		<div class="yellow"></div>
-
-		<div class="red"></div>
-
-	</div>
-
- 
-
+    <h1>HTML Assignment #3</h1>
+    
+    <!-- Table 1 -->
+    <table id="table-1" class="middle">
+        <tr>
+            <td id="t11">Cell 1</td>
+            <td id="t12">Cell 2</td>
+            <td id="t13">Cell 3</td>
+        </tr>
+        <tr class="center">
+            <td id="t11">Cell 4</td>
+            <td id="t12">Cell 5</td>
+            <td id="t13">Cell 6</td>
+        </tr>
+        <tr class="right">
+            <td id="t11">Cell 7</td>
+            <td id="t12">Cell 8</td>
+            <td id="t13">Cell 9</td>
+        </tr>
+    </table>
+    
+    <!-- Table 2 -->
+    <table id="table-2" class="middle">
+        <tr>
+            <td id="t21" colspan="6">Single Cell Span</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+            <td>Row 2, Cell 4</td>
+            <td>Row 2, Cell 5</td>
+            <td>Row 2, Cell 6</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+            <td>Row 3, Cell 4</td>
+            <td>Row 3, Cell 5</td>
+            <td>Row 3, Cell 6</td>
+        </tr>
+        <tr>
+            <td>Row 4, Cell 1</td>
+            <td>Row 4, Cell 2</td>
+            <td>Row 4, Cell 3</td>
+            <td>Row 4, Cell 4</td>
+            <td>Row 4, Cell 5</td>
+            <td>Row 4, Cell 6</td>
+        </tr>
+        <tr>
+            <td>Row 5, Cell 1</td>
+            <td>Row 5, Cell 2</td>
+            <td>Row 5, Cell 3</td>
+            <td>Row 5, Cell 4</td>
+            <td>Row 5, Cell 5</td>
+            <td>Row 5, Cell 6</td>
+        </tr>
+        <tr>
+            <td>Row 6, Cell 1</td>
+            <td>Row 6, Cell 2</td>
+            <td>Row 6, Cell 3</td>
+            <td>Row 6, Cell 4</td>
+            <td>Row 6, Cell 5</td>
+            <td>Row 6, Cell 6</td>
+        </tr>
+    </table>
+    
+    <!-- Table 3 -->
+    <table id="table-3" class="middle">
+        <tr class="green">
+            <td>Green Row 1, Cell 1</td>
+            <td>Green Row 1, Cell 2</td>
+            <td>Green Row 1, Cell 3</td>
+            <td>Green Row 1, Cell 4</td>
+            <td>Green Row 1, Cell 5</td>
+            <td>Green Row 1, Cell 6</td>
+        </tr>
+        <tr>
+            <td id="t-image" colspan="6">
+                <img src="https://via.placeholder.com/150" alt="Sample Image" />
+            </td>
+        </tr>
+        <tr class="blue">
+            <td>Blue Row 3, Cell 1</td>
+            <td>Blue Row 3, Cell 2</td>
+            <td>Blue Row 3, Cell 3</td>
+            <td>Blue Row 3, Cell 4</td>
+            <td>Blue Row 3, Cell 5</td>
+            <td>Blue Row 3, Cell 6</td>
+        </tr>
+    </table>
 </body>
-
- 
-
 </html>
